@@ -1,22 +1,81 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    // Declaração das variáveis para os dados das cartas
+    char estado;
+    char codigo[4];
+    char cidade[50];
+    int populacao;
+    int pontos_turisticos;
+    float area;
+    float PIB;
+
+    // Cadastro da Primeira Carta:
+    printf("Cadastro da Primeira Carta:\n");
+    printf("Digite o código do estado (Ex: A): ");
+    scanf(" %c", &estado);  // Captura o estado (A, B, C...)
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Digite o código da carta (Ex: A01): ");
+    scanf("%s", codigo);    // Captura o código da carta
+
+    printf("Digite o nome da cidade: ");
+    scanf(" %[^\n]s", cidade); // Captura o nome da cidade (permitindo espaços)
+
+    printf("Digite a população da cidade: ");
+    scanf("%d", &populacao);  // Captura a população da cidade
+
+    printf("Digite o número de pontos turísticos da cidade: ");
+    scanf("%d", &pontos_turisticos);  // Captura o número de pontos turísticos
+
+    printf("Digite a área da cidade em km²: ");
+    scanf("%f", &area);   // Captura a área da cidade
+
+    printf("Digite o PIB da cidade em bilhões de dólares: ");
+    scanf("%f", &PIB);    // Captura o PIB da cidade
+
+    // Exibição dos Dados da Primeira Carta:
+    printf("\nDados da Primeira Carta:\n");
+    printf("Estado: %c\n", estado);  // Exibe o estado
+    printf("Código da Carta: %s\n", codigo);  // Exibe o código da carta
+    printf("Nome da Cidade: %s\n", cidade);  // Exibe o nome da cidade
+    printf("População: %d\n", populacao);  // Exibe a população
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);  // Exibe o número de pontos turísticos
+    printf("Área: %.2f km²\n", area);  // Exibe a área
+    printf("PIB: %.2f bilhões de dólares\n", PIB);  // Exibe o PIB
+
+    // Cadastro da Segunda Carta:
+    printf("\nCadastro da Segunda Carta:\n");
+    printf("Digite o código do estado (Ex: B): ");
+    scanf(" %c", &estado);  // Captura o estado (A, B, C...)
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o código da carta (Ex: B02): ");
+    scanf("%s", codigo);    // Captura o código da carta
+
+    printf("Digite o nome da cidade: ");
+    scanf(" %s", cidade); // Captura o nome da cidade (não permite espaços)
+
+    printf("Digite a população da cidade: ");
+    scanf("%d", &populacao);  // Captura a população da cidade
+
+    printf("Digite o número de pontos turísticos da cidade: ");
+    scanf("%d", &pontos_turisticos);  // Captura o número de pontos turísticos
+
+    printf("Digite a área da cidade em km²: ");
+    scanf("%f", &area);   // Captura a área da cidade
+
+    printf("Digite o PIB da cidade em bilhões de dólares: ");
+    scanf("%f", &PIB);    // Captura o PIB da cidade
+
+    // Exibição dos Dados da Segunda Carta:
+    printf("\nDados da Segunda Carta:\n");
+    printf("Estado: %c\n", estado);  // Exibe o estado
+    printf("Código da Carta: %s\n", codigo);  // Exibe o código da carta
+    printf("Nome da Cidade: %s\n", cidade);  // Exibe o nome da cidade
+    printf("População: %d\n", populacao);  // Exibe a população
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);  // Exibe o número de pontos turísticos
+    printf("Área: %.2f km²\n", area);  // Exibe a área
+    printf("PIB: %.2f bilhões de dólares\n", PIB);  // Exibe o PIB
 
     return 0;
 }
+
